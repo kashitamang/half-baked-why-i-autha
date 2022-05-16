@@ -13,7 +13,7 @@ export async function signupUser(email, password) {
     if (response.user) {
         return response.user;
     } else {
-        console.error(response.error);
+        //console.error(response.error);
     }
 }
 
