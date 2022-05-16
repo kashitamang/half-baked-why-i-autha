@@ -11,3 +11,4 @@ logoutButton.addEventListener('click', async () => {
     await logout();
 });
 
+// redirectIfLoggedIn;

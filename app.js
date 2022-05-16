@@ -10,6 +10,8 @@ const signUpPassword = document.getElementById('sign-up-password');
 
 // Wire up sign in and sign up forms to supabase
 
+redirectIfLoggedIn();
+
 signUpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const data = new FormData(signUpForm);
@@ -20,5 +22,6 @@ signUpForm.addEventListener('submit', async (e) => {
     }
 });
 // Redirect to /other-page on successful auth
-redirectIfLoggedIn;
+
 // Redirect to /other-page when page loads if user is authenticated
+
